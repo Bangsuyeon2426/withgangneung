@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* menu1 */
+
+/* banner */
+.menu_bg {
+    position: relative;
+    width: 100%;
+    min-width: 1260px;
+    height: 500px;
+    background: url(../images_/food/banner.jpg) no-repeat center center;
+
+    top: 100px;
+
+    margin-bottom: 250px;
+}
+
+
+/* contents */
+
+
+.about>p>img {
+    width: 600px;
+    height: 600px;
+}
+
+.about {
+    position: relative;
+    width: 1260px;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+
+.about::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about>p {
+    width: 600px;
+    float: left;
+}
+
+.about>div {
+    width: 660px;
+    float: left;
+}
+
+.about>div>h2,
+.about>div>p {
+    margin-left: 80px;
+
+}
+
+.circle {
+    text-emphasis: filled #0E7A46;
+}
+
+.about>div>h2 {
+    font-family: 'SBAggroB';
+    font-size: 43px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.never {
+    color: #0E7A46;
+
+}
+
+.about>div>p {
+    font-size: 25px;
+    line-height: 1.5em;
+    margin-top: 30px;
+    line-height: 40px;
+
+}
+
+.food4 {
+    color: #0E7A46;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+
+    text-underline-offset: 15px;
+}
+
+#arrow {
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+
+}
+
+/* 4가지 맛기행 */
+/* 첫번째 */
+.first_trip {
+    width: 1260px;
+    /* border: 1px solid red; */
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.map>iframe {
+    width: 800px;
+    height: 290px;
+    z-index: 100px;
+    position: absolute;
+    top: 0;
+    float: left;
+    border-radius: 10px;
+}
+
+.first_trip>img:nth-child(2) {
+    width: 1000px;
+    height: 430px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 270px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.first_trip>img:nth-child(3) {
+    position: absolute;
+    top: 80px;
+    left: 600px;
+}
+
+.first_trip>p:nth-child(4) {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: 870px;
+}
+
+.first_trip>p:nth-child(4)::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.food_text {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 1000px;
+    height: 230px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    text-align: center;
+}
+
+.food_text>p {
+    width: 1000px;
+    height: 230px;
+    color: #fff;
+    z-index: 100;
+    position: absolute;
+    top: 60px;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.first_trip:hover>div {
+    opacity: 1;
+    /* top: 180px; */
+}
+
+/* 두번째 */
+.second_trip {
+    width: 1260px;
+    /* border: 1px solid red; */
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.map2>iframe {
+    width: 600px;
+    height: 290px;
+    z-index: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+.second_trip>img:nth-child(2) {
+    width: 1000px;
+    height: 430px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 270px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.second_trip>img:nth-child(3) {
+    position: absolute;
+    top: 80px;
+    right: 600px;
+}
+
+.second_trip>p:nth-child(4) {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    right: 870px;
+}
+
+.second_trip>p:nth-child(4)::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.food_text2 {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 1000px;
+    height: 230px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    text-align: center;
+}
+
+.food_text2>p {
+    width: 1000px;
+    height: 230px;
+    color: #fff;
+    z-index: 100;
+    position: absolute;
+    top: 60px;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.second_trip:hover>div {
+    opacity: 1;
+    /* top: 180px; */
+}
+
+
+/* 중간중간 사진 */
+/* #girl {
+    position: absolute;
+    top: 400px;
+    left: -300px;
+} */
+
+/* 찾아오시는길 */
+.menu_title {
+    margin: 100px auto;
+    text-align: center;
+    color: lightslategray;
+}
+
+.map {
+    width: 1260px;
+}
+
+.map::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.map>div {
+    width: 660px;
+    float: left;
+    height: 450px;
+}
+
+.map>iframe {
+    width: 600px;
+    float: left;
+}
+
+.map>div>h3 {
+    color: lightslategray;
+    margin-bottom: 30px;
+}
+
+.map>div>p {
+    margin-bottom: 30px;
+}

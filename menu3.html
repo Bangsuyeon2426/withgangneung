@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지연습</title>
+    <script src="https://kit.fontawesome.com/62632d2ae8.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/menu3.js"></script>
+
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/menu3.css">
+
+</head>
+
+<body>
+    <div class="header_cover">
+        <header>
+            <h1><a href="index.html"><span>WITH</span> 강릉</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="./menu2.html">갈거리</a></li>
+                    <li><a href="./menu1.html">먹거리</a></li>
+                    <li><a href="./menu3.html">볼거리</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="menu_bg"></div>
+    <div class="contents">
+
+        <div class="intro">
+            <p>강릉의 볼거리</p>
+            <hr id="hr">
+            <p>
+
+                사랑하는 가족들과 함께하는 여행을 <br>
+                <span>더 알차고 신나게 보내세요 <br></span>
+
+                강릉 구석구석 진주같은<br> 축제와 행사<span>를 소개합니다.</span>
+            </p>
+            <img src="./images_/walk 1.png" alt="walk">
+        </div>
+
+        <form action="#">
+            <div class="menu">
+                <ul class="first_ul">
+                    <li>
+                        <input type="checkbox" name="ing" value="ing" id="ing">
+                        <label for="ing">진행중</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="end" value="end" id="end">
+                        <label for="end">진행종료</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="tobe" value="tobe" id="tobe">
+                        <label for="tobe">진행예정</label>
+                    </li>
+                </ul>
+                <ul class="last_ul">
+                    <li>
+                        <input type="radio" name="sort" value="ascending">
+                        <label for="ascending">날짜오름차순</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sort" value="descending">
+                        <label for="descending">날짜내림차순</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="images_cover">
+                <ul class="images">
+                    <li title="end" class="images_text_parent" data-position="2">
+                        <img src="./images_/볼거리/festival1.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>풍호마을 연꽃축제 <br>
+                                <span class="when">매년 4월중</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="tobe" class="images_text_parent" data-position="8">
+                        <img src="./images_/볼거리/festival2.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>강릉커피축제 <br>
+                                <span class="when">2023-10-10~2023-10-17</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="end" class="images_text_parent" data-position="1">
+                        <img src="./images_/볼거리/festival3.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>정동진 해돋이 축제 <br>
+                                <span class="when">매년 12월31일~1월1일</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="end" class="images_text_parent" data-position="3">
+                        <img src="./images_/볼거리/festival4.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>강릉경포벚꽃축제 <br>
+                                <span class="when">매년 4월 벚꽃 개화시기</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="tobe" class="images_text_parent" data-position="5">
+                        <img src="./images_/볼거리/festival5.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>강릉프레페스티벌 <br>
+                                <span class="when">2023-05-25~2023-06-14</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="ing" class="images_text_parent" data-position="7">
+                        <img src="./images_/볼거리/festival6.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>강릉월화거리야시장 <br>
+                                <span class="when">매주 금,토요일 18시~23시</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="ing" class="images_text_parent" data-position="4">
+                        <img src="./images_/볼거리/festival7.JPG" alt="festival1">
+                        <div class="images_text">
+                            <p>강릉 버스킹 홀릭행사 <br>
+                                <span class="when">2023-5-12~11월 말</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li title="ing" class="images_text_parent" data-position="6">
+                        <img src="./images_/볼거리/festival8.jpg" alt="festival1">
+                        <div class="images_text">
+                            <p>시나미 명주 나들이 <br>
+                                <span class="when">매주 목, 금, 토, 일</span>
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </form>
+
+        <footer>
+            <div class="footer_top">
+                <div class="footer_cover">
+                    <p>고객센터 02-111-0000 <br>
+                        상담시간 MON - FRI : 09시 ~ 18시</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">채용안내</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <address class="copy">차엔 대표 나대표 | 사업자등록번호 123-45-6788 <br>
+                    주소 : 제주도 서귀포시 오름해변길 144 <br>
+                    COPYRIGHT &copy; 2021 COFFEE CHA&. ALL RIGHTS RESERVED.
+                </address>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.blog.naver.com" target="_blank"><i class="fa-brands fa-blogger"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

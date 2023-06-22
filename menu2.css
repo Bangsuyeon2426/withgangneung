@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'HSBombaram21-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* .contents */
+
+/* menu2 */
+.menu_bg {
+    position: relative;
+    width: 100%;
+    /* min-width: 1260px; */
+    height: 500px;
+    background: url(../images_/menu_bg_1\ .jpg) no-repeat center center;
+
+    top: 100px;
+
+}
+
+/* 다양한 강릉의 모습 */
+
+.menu_title {
+    margin: 100px auto;
+    margin-top: 250px;
+    text-align: center;
+    font-size: 40px;
+
+    /* display: inline-block; */
+}
+
+/* 호버 텍스트 효과 */
+
+.menu_title {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to top, #0E7A46 40%, transparent 40%);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+
+    z-index: -1;
+}
+
+.menu_title:hover::after {
+    width: 200%;
+}
+
+.menulist img {
+    width: 300px;
+    height: 330px;
+}
+
+/* 중간에 사진 */
+.img {
+    position: relative;
+    width: 100%;
+    min-width: 1260px;
+    height: 500px;
+    background: url(../images_/09_00.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 250px;
+    /* margin-bottom: 250px; */
+}
+
+.img>p {
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 500px;
+}
+
+.img_sub>p {
+    color: #ffffffbd;
+    text-align: right;
+    line-height: 100px;
+    font-size: 50px;
+
+    margin-right: 80px;
+    padding-top: 80px;
+    font-family: 'HSBombaram21-Regular';
+}
+
+
+/* 메뉴 슬라이더 */
+
+.center {
+    width: 1260px;
+    height: 270px;
+    position: relative;
+}
+
+.center>div>img {
+    width: 280px;
+}
+
+.slick-slide {
+    opacity: 0.5;
+}
+
+.slick-center {
+    display: block;
+    max-width: 10% !important;
+    max-height: 20% !important;
+    opacity: 1;
+    z-index: 10;
+
+    transform: scale(1.25);
+    margin-top: -16px;
+}
+
+.slick-list {
+    padding: 45px 60px !important;
+}
+
+.slick-prev {
+    left: 55px;
+    z-index: 10;
+}
+
+.slick-prev:before {
+    content: "◀";
+    color: #777;
+}
+
+.slick-next {
+    right: 55px;
+    z-index: 10;
+}
+
+.slick-next:before {
+    content: "▶";
+    color: #777;
+}
+
+/* 강릉의지금 */
+.menulist {
+    width: 1260px;
+    position: relative;
+}
+
+.menulist::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menulist>li {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.menulist>li:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.menulist>li>div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    height: 330px;
+    top: 200px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    text-align: center;
+}
+
+.menulist>li>div>h3 {
+    color: #fff;
+    margin: 20px auto;
+}
+
+.menulist>li>div>p {
+    font-family: 'HSBombaram21-Regular';
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+.menulist>li:hover>div {
+    opacity: 1;
+    top: 180px;
+}
+
+/* 더보기 버튼 */
+
+.plus {
+    text-align: center;
+}
+
+.plus>button {
+    cursor: pointer;
+    clear: both;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

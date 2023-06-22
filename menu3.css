@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu_bg {
+    position: relative;
+    width: 100%;
+    /* min-width: 1260px; */
+    height: 500px;
+    background: url(../images_/firework.jpg) no-repeat center center;
+
+    top: 100px;
+    margin-bottom: 250px;
+}
+
+.menu_title {
+    margin: 100px auto;
+    text-align: center;
+    color: lightslategray;
+}
+
+
+.contents>p {
+    margin-bottom: 50px;
+    width: 1180px;
+}
+
+/* intro */
+.intro>p:nth-child(1) {
+    font-size: 25px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+}
+
+#hr {
+    width: 170px;
+    border: 1px double #444444;
+    text-align: left;
+    position: absolute;
+
+    left: 160px;
+    top: 20px;
+}
+
+.intro span {
+    color: #999999;
+}
+
+.intro {
+    position: relative;
+    width: 1260px;
+    height: 260px;
+    margin-bottom: 250px;
+    /* border: 1px solid red; */
+}
+
+.intro>p:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    width: 520px;
+    font-family: 'KOTRA_BOLD-Bold';
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 50px;
+    text-align: left;
+}
+
+.intro>img {
+    position: absolute;
+    width: 700px;
+    height: 260px;
+    margin-left: 20px;
+    right: 0;
+}
+
+/* 슬라이드 */
+/* h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
+
+.slider-for,
+.slider-nav {
+    width: 1260px;
+}
+
+.slider-for img {
+    width: 1180px;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px 80px 10px 80px;
+}
+
+.slider-nav img {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 380px;
+    height: 250px;
+    border-radius: 10px;
+} */
+
+/* 페스티발 */
+.menu {
+    width: 1200px;
+    height: 50px;
+    border: 3px double #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu>ul>li {
+    float: left;
+    line-height: 47px;
+    margin-left: 50px;
+}
+
+.images_cover {
+    margin-bottom: 250px;
+}
+
+.images {
+    position: relative;
+    width: 1260px;
+}
+
+.images>li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.images img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.images:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+
+.images_text {
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 280px;
+    height: 100px;
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    z-index: 2;
+    font-size: 20px;
+    text-align: center;
+}
+
+.images_text>p {
+    color: black;
+    line-height: 40px;
+}
+
+form {
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.when {
+    font-size: 17px;
+}

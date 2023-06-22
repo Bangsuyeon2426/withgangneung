@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+.cover_cover {
+    position: relative;
+    width: 100%;
+    min-width: 1260px;
+    height: 500px;
+    /* border: 1px solid red; */
+}
+
+.slick-slide {
+    width: 100%;
+    min-width: 1260px;
+}
+
+.slick-slide img {
+    width: 100%;
+    min-width: 1260px;
+}
+
+
+.slick-prev,
+.slick-next {
+    width: 125px;
+    height: 125px;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 10;
+}
+
+.slick-prev:before {
+    content: url(../images_/prev.png);
+}
+
+.slick-next {
+    right: 25px;
+    z-index: 10;
+}
+
+.slick-next:before {
+    content: url(../images_/next.png);
+}
+
+
+/* Dots */
+.slick-dots {
+    bottom: 5px;
+    z-index: 10;
+}
+
+.slick-dots li {
+    float: left;
+    width: 25%;
+    height: 5px;
+    margin: 0px;
+}
+
+.slick-dots li button:before {
+    width: 100%;
+    height: 5px;
+    content: '';
+    text-align: center;
+    opacity: .25;
+    background-color: black;
+}
+
+/* ::content 시작 */
+.content {
+    position: relative;
+    margin-top: 500px;
+    text-align: center;
+}
+
+.single-item>div img {
+    width: 100%;
+    min-width: 1260px;
+    height: 800px;
+    margin-top: 100px;
+    filter: brightness(80%)
+}
+
+.content>h3 span {
+    color: #0E7A46;
+}
+
+.content>h3 {
+    font-size: 40px;
+}
+
+.content>p {
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+/* 카메라와 메시지 */
+.labindex {
+    position: relative;
+    width: 840px;
+    margin: 90px auto;
+    margin-bottom: 250px;
+}
+
+.labindex>img:nth-child(1) {
+    margin-right: 30px;
+}
+
+.labindex>p {
+    position: absolute;
+    top: 480px;
+    left: 560px;
+    z-index: 100;
+    color: #0E7A46;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* 강릉여행 이모저모 */
+.imo {
+    /* 1920 */
+    width: 100%;
+    height: 660px;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.imo>h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.imo>h2 span {
+    color: #0E7A46;
+}
+
+.imo_photo {
+    width: 1200px;
+}
+
+.imo_photo img {
+    width: 400px;
+    height: 370px;
+}
+
+.imo_photo li {
+    float: left;
+}
+
+.imo_text {
+    width: 275px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin-right: 120px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    position: relative;
+    right: -60px;
+    top: 20px;
+}
+
+.imo_photo li {
+    overflow: hidden;
+    transition: all 0.8s linear ease-in-out;
+}
+
+.imo_photo img:hover {
+    /* border-radius: 15px; */
+    transform: scale(1.2);
+}
+
+.imo_text:hover {
+    color: #0E7A46;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+
+    text-underline-offset: 5px;
+    cursor: pointer;
+    /* background-color: #59ae68; */
+}
+
+.imo_bg {
+    width: 100%;
+    height: 424px;
+    /* background-color: #b2d2a6; */
+    background: #1D976C;
+
+    background: -webkit-linear-gradient(to bottom, #93F9B9, #1D976C);
+
+    background: linear-gradient(to bottom, #93F9B9, #1D976C);
+
+
+
+
+    z-index: -1;
+    position: relative;
+    top: 100px;
+}
+
+/* 중간에 바다 배경 */
+
+.img {
+    position: relative;
+    width: 100%;
+    min-width: 1260px;
+    height: 500px;
+    background: url(../images_/sea-3450584.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 250px;
+}
+
+.img>p {
+    font-size: 100px;
+    color: red;
+    text-align: center;
+    line-height: 500px;
+}
+
+#human1 {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+
+/* 다양한 시리즈*/
+.gallery {
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.gallery>h2 {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.gallery>h2 span {
+    color: #0E7A46;
+}
+
+
+/* 다양한 갈거리 */
+.go-1 {
+    position: relative;
+    width: 1240px;
+    height: 495px;
+}
+
+.go-1 img {
+    width: 300px;
+    filter: brightness(75%);
+}
+
+td img:hover {
+    box-sizing: border-box;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+
+/* td img:hover+.text_overlay {
+    visibility: visible;
+} */
+
+#big_Square {
+    width: 600px;
+    height: 495px;
+
+}
+
+tr>td img {
+    width: 300px;
+    height: 240px;
+    margin: 3px;
+}
+
+.text_over,
+.text_over2,
+.text_over3,
+.text_over4,
+.text_over5 {
+    position: relative;
+}
+
+.text_overlay {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 180px;
+    left: 210px;
+
+}
+
+.text_overlay>span,
+.text_overlay2>span,
+.text_overlay3>span,
+.text_overlay4>span,
+.text_overlay5>span {
+    color: #fff;
+    font-size: 50px;
+}
+
+.text_overlay2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.text_overlay3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    left: 60px
+}
+
+.text_overlay4 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.text_overlay5 {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.text_overlay,
+.text_overlay2,
+.text_overlay3,
+.text_overlay4,
+.text_overlay5 {
+    visibility: hidden;
+}
+
+.text_over img:hover+.text_overlay {
+    visibility: visible;
+
+}
+
+.text_over2 img:hover+.text_overlay2 {
+    visibility: visible;
+}
+
+.text_over3 img:hover+.text_overlay3 {
+    visibility: visible;
+}
+
+.text_over4 img:hover+.text_overlay4 {
+    visibility: visible;
+}
+
+.text_over5 img:hover+.text_overlay5 {
+    visibility: visible;
+}
+
+
+
+/* 다양한 먹거리 */
+
+.product {
+    position: relative;
+    width: 1260px;
+    height: 330px;
+}
+
+.go_photo img {
+    width: 300px;
+    height: 330px;
+}
+
+.product>p {
+    position: absolute;
+    top: 150px;
+    z-index: 50;
+}
+
+.product_pre {
+    left: -40px;
+}
+
+.product_next {
+    right: -40px;
+}
+
+.product>div {
+    position: relative;
+    width: 1260px;
+    height: 330px;
+    overflow: hidden;
+}
+
+.product>div>ul {
+    position: absolute;
+    left: 0;
+    width: 2880px;
+    /* 사진width + margin-right */
+}
+
+.product>div>ul>li {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.product>div>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 다양한 볼거리 */
+
+#coffee-festival1,
+#coffee-festival2,
+#coffee-festival3 {
+    width: 350px;
+    height: 500px;
+}
+
+.go_see {
+    position: relative;
+    width: 1440px;
+    height: 710px;
+    margin-top: 100px;
+}
+
+.go_see p,
+.go_see img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#coffee-festival1 {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+
+}
+
+#coffee-festival2 {
+    position: absolute;
+    top: 60px;
+    left: 550px;
+    z-index: 10px;
+}
+
+#coffee-festival3 {
+    position: absolute;
+    top: 120px;
+    left: 850px;
+
+}
+
+.go_see_bg {
+    width: 100%;
+    height: 420px;
+    /* background-color: #b2d2a6; */
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+
+    position: absolute;
+    top: 220px;
+    z-index: -100;
+}
